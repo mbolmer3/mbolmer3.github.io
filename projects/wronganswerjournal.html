@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrongAnswerJournal - Michael Bolmer Jr.</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 6rem 0 4rem 0;
+            text-align: center;
+            margin-top: 70px;
+        }
+        
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .project-section {
+            margin-bottom: 4rem;
+        }
+        
+        .project-section h2 {
+            color: var(--text-primary);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .project-section h3 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .project-image {
+            width: 100%;
+            min-height: 400px;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            border: 2px dashed var(--border-color);
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .architecture-diagram {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            margin: 2rem 0;
+        }
+        
+        .arch-layer {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+        
+        .arch-component {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        
+        .arch-component:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #C64600;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .metric-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+        
+        .metric-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-text">Michael Bolmer Jr</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#travel" class="nav-link">Travel</a></li>
+                <li><a href="../index.html#leadership" class="nav-link">Leadership</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <header class="project-header">
+        <div class="container">
+
+            <h1>WrongAnswerJournal.com</h1>
+            <p>AI-powered test prep platform generating $100 MRR</p>
+        </div>
+    </header>
+
+    <!-- Project Content -->
+    <main class="project-content">
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>WrongAnswerJournal is an AI-powered test preparation platform that helps students learn from their mistakes. Students can upload a screenshot of a question with their incorrect answer and get a detailed explanation of why the answer is wrong. Students can also review answers they previously got wrong via flashcards. Premium users have access to analytical insights to study more efficiently.</p>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-value">250+</span>
+                    <span class="metric-label">Active Users</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">$100</span>
+                    <span class="metric-label">Monthly Revenue</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>System Architecture</h2>
+            <div class="project-image">
+                <img src="../waj-architecture.png" alt="WAJ System Architecture Diagram">
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>User Flow Diagram</h2>
+            <div class="project-image">
+                <img src="../waj-userflow.png" alt="WAJ User Flow Diagram">
+            </div>
+        </div>
+
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="../index.html#projects" class="btn btn-secondary" style="background-color: #C64600; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 500; display: inline-block;">Back to Projects</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Michael Bolmer Jr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
